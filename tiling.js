@@ -2376,6 +2376,9 @@ function insertWindow(metaWindow, {existing}) {
             if (winprop.focus) {
                 Main.activateWindow(metaWindow);
             }
+            if (winprop.fullscreen) {
+                metaWindow.make_fullscreen();
+            }
         }
 
         if (addToScratch) {
